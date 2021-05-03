@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="15dp"
+    tools:context=".ui.activity.home.TambahBarangActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Barang"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/id_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:background="@color/white"
+            android:hint="Masukkan ID Barang"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Barang"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/nama_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:background="@color/white"
+            android:hint="Masukkan Nama Barang"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga Barang"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/harga_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:background="@color/white"
+            android:hint="Masukkan Harga Barang"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:text="Simpan Barang" />
+
+</RelativeLayout>
